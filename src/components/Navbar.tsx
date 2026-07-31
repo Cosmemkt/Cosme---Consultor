@@ -24,7 +24,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenDiagnostic, onOpenTracking
   }, []);
 
   const navLinks = [
-    { name: 'O Problema', href: '#problema' },
+    { name: 'Problema', href: '#problema' },
     { name: 'Metodologia', href: '#metodologia' },
     { name: 'Sobre Cosme', href: '#sobre' },
     { name: 'Experiência', href: '#experiencia' },
