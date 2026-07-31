@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #ffffff;
+    background-color: #050505;
+  }
+  
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Sora', sans-serif;
+  }
+}
+
+.glow-gold {
+  box-shadow: 0 0 35px -5px rgba(212, 175, 55, 0.35);
+}
+
+.glow-gold-lg {
+  box-shadow: 0 0 60px -10px rgba(212, 175, 55, 0.45);
+}
+
+.border-gold {
+  border: 1px solid rgba(212, 175, 55, 0.25);
+}
+
+.border-glass {
+  border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.bg-glass {
+  background: rgba(15, 15, 15, 0.85);
+  backdrop-filter: blur(12px);
+}
+
+.bg-glass-card {
+  background: rgba(20, 20, 20, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.bg-radial-gradient {
+  background: radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.12) 0%, rgba(5, 5, 5, 0) 70%);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #ffffff 0%, #f3e5ab 50%, #d4af37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-gold-text {
+  background: linear-gradient(135deg, #fff7ad 0%, #ffd700 35%, #d4af37 70%, #aa771c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-gold-btn {
+  background: linear-gradient(135deg, #fce080 0%, #d4af37 50%, #b8860b 100%);
+  color: #000000;
+}
+
+.gradient-gold-btn:hover {
+  background: linear-gradient(135deg, #fff299 0%, #e5be48 50%, #c49214 100%);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #262010;
+  border: 1px solid #d4af37;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3d3319;
+}
+
+
