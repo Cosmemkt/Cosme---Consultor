@@ -44,14 +44,22 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenDiagnostic, onOpenTracking
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Brand Logo */}
         <a href="#" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-700 via-blue-600 to-indigo-500 flex items-center justify-center text-white font-extrabold text-lg shadow-lg shadow-blue-600/30 group-hover:scale-105 transition-transform">
-            CA
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 via-amber-400 to-amber-600 p-0.5 shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform overflow-hidden flex items-center justify-center">
+            <img
+              src="https://lh3.googleusercontent.com/d/1L47x1gEvMgxfPc9qDT9tU0RrGQIE1jQY=s1000?authuser=0"
+              alt="Cosme Araújo Logo"
+              referrerPolicy="no-referrer"
+              className="w-full h-full object-cover rounded-[10px]"
+              onError={(e) => {
+                (e.currentTarget as HTMLImageElement).src = "https://drive.google.com/uc?export=view&id=1L47x1gEvMgxfPc9qDT9tU0RrGQIE1jQY";
+              }}
+            />
           </div>
           <div className="flex flex-col">
-            <span className="font-heading font-extrabold text-slate-100 text-lg tracking-tight leading-none group-hover:text-blue-400 transition-colors">
+            <span className="font-heading font-extrabold text-slate-100 text-lg tracking-tight leading-none group-hover:text-amber-400 transition-colors">
               COSME ARAÚJO
             </span>
-            <span className="text-[11px] font-medium text-slate-400 tracking-wider uppercase mt-1">
+            <span className="text-[11px] font-medium text-amber-500/80 tracking-wider uppercase mt-1">
               Consultoria Comercial
             </span>
           </div>

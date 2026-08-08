@@ -32,14 +32,22 @@ export const Footer: React.FC<FooterProps> = ({ onOpenTracking }) => {
           {/* Col 1: Brand Info */}
           <div className="md:col-span-5 flex flex-col items-start">
             <a href="#" className="flex items-center gap-3 mb-4 group">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-700 to-indigo-500 flex items-center justify-center text-white font-extrabold text-lg shadow-lg">
-                CA
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 via-amber-400 to-amber-600 p-0.5 shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform overflow-hidden flex items-center justify-center">
+                <img
+                  src="https://lh3.googleusercontent.com/d/1L47x1gEvMgxfPc9qDT9tU0RrGQIE1jQY=s1000?authuser=0"
+                  alt="Cosme Araújo Logo"
+                  referrerPolicy="no-referrer"
+                  className="w-full h-full object-cover rounded-[10px]"
+                  onError={(e) => {
+                    (e.currentTarget as HTMLImageElement).src = "https://drive.google.com/uc?export=view&id=1L47x1gEvMgxfPc9qDT9tU0RrGQIE1jQY";
+                  }}
+                />
               </div>
               <div className="flex flex-col">
                 <span className="font-heading font-extrabold text-white text-lg tracking-tight">
                   COSME ARAÚJO
                 </span>
-                <span className="text-[11px] font-medium text-slate-400 uppercase tracking-wider">
+                <span className="text-[11px] font-medium text-amber-500/80 uppercase tracking-wider">
                   Consultoria Comercial & Tráfego Pago
                 </span>
               </div>
